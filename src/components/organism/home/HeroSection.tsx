@@ -10,8 +10,8 @@ export function HeroSection() {
         <Image
           src={"/images/homebg.webp"}
           layout="fill"
-          objectFit="center"
-          objectPosition="cover"
+          objectFit="cover"
+          objectPosition="center"
           alt="hero_bg"
         />
 

@@ -1,33 +1,54 @@
 import { cn } from "@/lib/utils";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface TwoGridSectionProps {
   renderComponent: () => JSX.Element;
-  image: string;
+  image: StaticImageData | string;
   className?: string;
+  row?: 3 | 4 | 5;
+  roundedRight?: boolean;
 }
 
 export function TwoGridSection({
   renderComponent,
   image,
   className,
+  roundedRight,
+  row,
 }: TwoGridSectionProps) {
   return (
     <section
-      className={cn("grid grid-cols-1 ~lg:grid-cols-2 ~lg:gap-24", className)}
+      className={cn(
+        "grid grid-cols-1 lg:grid-cols-2 gap-[44px] lg:gap-20 relative",
+        className,
+        row === 5 ? "grid grid-cols-1 lg:grid-cols-5" : ""
+      )}
     >
-      <div>{renderComponent()}</div>{" "}
-      <article>
+      <article
+        className={cn(
+          "order-2 lg:order-1",
+          row === 5 ? "grid-cols-1 lg:col-span-3" : ""
+        )}
+      >
+        {renderComponent()}
+      </article>
+      <div
+        className={cn(
+          "relative w-full max-lg:h-[322px] h-full rounded-3xl overflow-hidden order-1 lg:order-2",
+          row === 5 ? "grid-cols-1 lg:col-span-2" : "",
+          roundedRight ? "rounded-3xl rounded-tr-none  " : ""
+        )}
+      >
         <Image
           src={image}
           alt="section_image"
           layout="fill"
           objectFit="cover"
-          decoding="async"
-          loading="lazy"
-          objectPosition="center"
+          placeholder="blur"
+          objectPosition="top"
+          className="w-full "
         />
-      </article>
+      </div>
     </section>
   );
 }

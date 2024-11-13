@@ -26,7 +26,7 @@ export function Header() {
       <div>
         <Image
           src={Logo}
-          className="w-[133px] "
+          className="w-[85px] lg:w-[133px] "
           width={140}
           height={50}
           alt="logo"
@@ -76,7 +76,11 @@ export function Header() {
                   <DropdownMenuPortal>
                     <DropdownMenuSubContent>
                       <DropdownMenuItem>
-                        <span>Parenting</span>
+                        <Link
+                          href={"/services/therapy-type/parenting-counselling"}
+                        >
+                          Parenting
+                        </Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem>
                         <span>Child Therapy</span>
@@ -230,7 +234,7 @@ export function Header() {
           </Text>
         </Link>
       </nav>
-      <Button className="bg-primary text-white rounded-md p-2 !py-2.5">
+      <Button className="bg-primary text-white rounded-md p-2 !py-2.5 ~text-sm/base">
         Book a Free Consult
       </Button>
     </header>
