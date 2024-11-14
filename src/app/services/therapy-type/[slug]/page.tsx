@@ -1,6 +1,7 @@
 import {
   ChildTherapy,
   ParentingCounselling,
+  TeenTherapy,
 } from "@/components/pages/services/type-of-therapy";
 
 interface TherapyTypeProps {
@@ -14,6 +15,7 @@ export async function generateMetadata({ params }: TherapyTypeProps) {
   const titles: Record<string, string> = {
     "parenting-counselling": "Parenting Counselling",
     "child-therapy": "Child Therapy",
+    "teen-therapy": "Teen Therapy",
   };
 
   const title = titles[params.slug] || "Young Sprouts Therapy";
@@ -34,6 +36,9 @@ export default async function TherapyTypePage({
       break;
     case "child-therapy":
       content = <ChildTherapy />;
+      break;
+    case "teen-therapy":
+      content = <TeenTherapy />;
       break;
 
     default:
