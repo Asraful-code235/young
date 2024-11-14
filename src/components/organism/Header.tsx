@@ -23,7 +23,7 @@ export function Header() {
   const [isOpenAbout, setIsOpenAbout] = useState(false);
   return (
     <header className="w-full flex items-center justify-between gap-4 py-1.5 max-w-[1440px] mx-auto ~px-5/16 ">
-      <div>
+      <Link href={"/"}>
         <Image
           src={Logo}
           className="w-[85px] lg:w-[133px] "
@@ -31,7 +31,7 @@ export function Header() {
           height={50}
           alt="logo"
         />
-      </div>
+      </Link>
       <nav className=" hidden lg:flex items-center gap-8">
         <Link href={"/"}>
           <Text type="p" size="medium" className="">
@@ -83,7 +83,9 @@ export function Header() {
                         </Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem>
-                        <span>Child Therapy</span>
+                        <Link href={"/services/therapy-type/child-therapy"}>
+                          Child Therapy
+                        </Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem>
                         <span>Teen Therapy</span>

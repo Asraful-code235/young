@@ -1,4 +1,7 @@
-import { ParentingCounselling } from "@/components/pages/services/type-of-therapy";
+import {
+  ChildTherapy,
+  ParentingCounselling,
+} from "@/components/pages/services/type-of-therapy";
 
 interface TherapyTypeProps {
   params: {
@@ -10,6 +13,7 @@ export async function generateMetadata({ params }: TherapyTypeProps) {
   // Map the slug to a corresponding capability title
   const titles: Record<string, string> = {
     "parenting-counselling": "Parenting Counselling",
+    "child-therapy": "Child Therapy",
   };
 
   const title = titles[params.slug] || "Young Sprouts Therapy";
@@ -27,6 +31,9 @@ export default async function TherapyTypePage({
   switch (slug) {
     case "parenting-counselling":
       content = <ParentingCounselling />;
+      break;
+    case "child-therapy":
+      content = <ChildTherapy />;
       break;
 
     default:

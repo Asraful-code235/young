@@ -25,9 +25,9 @@ export function HowPsychotherapyCanHelpCard({ item }: Props) {
           <path
             d="M3.33594 10H16.6693M16.6693 10L11.6693 5M16.6693 10L11.6693 15"
             stroke="#0196AF"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </svg>
       </Link>

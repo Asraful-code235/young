@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Header } from "@/components/organism";
+import MotionWrapper from "@/components/molecules/MotionWrapper";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,10 +28,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} text-[#5c5c5c] antialiased`}
       >
         <Header />
-        <main>{children}</main>
+        <MotionWrapper>
+          <main>{children}</main>
+        </MotionWrapper>
       </body>
     </html>
   );

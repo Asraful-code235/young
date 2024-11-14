@@ -19,7 +19,7 @@ export function TwoGridSection({
   return (
     <section
       className={cn(
-        "grid grid-cols-1 lg:grid-cols-2 gap-[44px] lg:gap-20 relative",
+        "grid grid-cols-1 lg:grid-cols-2 gap-[44px] lg:gap-20 relative z-30",
         className,
         row === 5 ? "grid grid-cols-1 lg:grid-cols-5" : ""
       )}
