@@ -84,7 +84,7 @@ export function GroupTherapy() {
             description="Group therapy offers many long-term benefits for kids and teens, including:"
           />
         </div>
-        <div className="max-w-[1440px] mx-auto w-full ~py-16/24 ">
+        <div className="max-w-[1440px] mx-auto w-full ~pt-16/24 ">
           <TwoGridSection
             renderComponent={() => <WorkShopForParents />}
             image={workshopforparents}

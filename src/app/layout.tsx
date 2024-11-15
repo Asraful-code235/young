@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Header } from "@/components/organism";
+import { Footer, Header } from "@/components/organism";
 import MotionWrapper from "@/components/molecules/MotionWrapper";
 
 const geistSans = localFont({
@@ -33,6 +33,7 @@ export default function RootLayout({
         <Header />
         <MotionWrapper>
           <main>{children}</main>
+          <Footer />
         </MotionWrapper>
       </body>
     </html>
