@@ -5,7 +5,8 @@ import {
   MeetOurTeam,
   TherapeuticModalities,
   TherapistInVaughan,
-} from "@/components/organism/home";
+  WhyChooseUs,
+} from '@/components/organism/home';
 
 export function Home() {
   return (
@@ -16,6 +17,7 @@ export function Home() {
       <MeetOurTeam />
       <TherapeuticModalities />
       <HowTherapyWorks />
+      <WhyChooseUs />
     </section>
   );
 }
