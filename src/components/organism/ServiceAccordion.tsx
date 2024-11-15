@@ -23,7 +23,7 @@ export function ServiceAccordion({ props }: PropType) {
           value={item.title}
           className="flex flex-col "
         >
-          <AccordionTrigger className="text-left ~text-base/xl font-medium">
+          <AccordionTrigger className="text-left ~text-base/xl !font-medium text-black">
             {item.title}
           </AccordionTrigger>
           <AccordionContent className="leading-6">

@@ -36,13 +36,13 @@ export function HeroSection({ props }: PropType) {
         <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-6">
           <Button
             variant={"default"}
-            className="bg-white text-primary hover:bg-primary hover:text-white py-3 max-w-[270px] w-full"
+            className="bg-white text-primary hover:bg-primary hover:text-white max-w-[270px] w-full"
           >
             Book a Free Consult
           </Button>
           <Button
             variant={"outline"}
-            className="border border-white hover:border-primary text-white py-3 max-w-[270px] w-full"
+            className="border border-white hover:border-primary text-white  max-w-[270px] w-full"
           >
             Call Now -(647)370-7622
           </Button>

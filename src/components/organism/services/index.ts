@@ -6,6 +6,7 @@ import { TwoRowGridWithSvg } from "./TwoRowGridWithSvg";
 import { Banner } from "./Banner";
 import { Faq } from "./Faq";
 import { OurApproach } from "./OurApproach";
+import { SubscriptionBanner } from "./SubscriptionBanner";
 
 export {
   HeroSection,
@@ -16,4 +17,5 @@ export {
   Banner,
   Faq,
   OurApproach,
+  SubscriptionBanner,
 };

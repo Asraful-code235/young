@@ -50,7 +50,7 @@ export function TwoGridSection({
           objectFit="cover"
           placeholder="blur"
           objectPosition="top"
-          className="w-full "
+          className="w-full object-cover object-center "
         />
       </div>
     </section>

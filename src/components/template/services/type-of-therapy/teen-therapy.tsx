@@ -45,6 +45,7 @@ export function TeenTherapy() {
             renderComponent={() => <BenefitsTeenTherapy />}
             image={benefitofteentherapyImage}
             rtl={true}
+            row={5}
           />
         </div>
         <div className="flex flex-col gap-8 ~py-16/24 overflow-hidden">
@@ -52,7 +53,7 @@ export function TeenTherapy() {
             <h2 className="font-medium ~text-2xl/3xl text-center text-primary">
               How We Help with Specific Teen Challenges
             </h2>
-            <p className="text-center leading-6">
+            <p className="text-center leading-6 max-w-[846px] mx-auto">
               Our therapists specialize in addressing a wide range of challenges
               that teens face, including
             </p>

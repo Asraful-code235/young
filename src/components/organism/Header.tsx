@@ -98,7 +98,9 @@ export function Header() {
                         </Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem>
-                        <span>Group Therapy</span>
+                        <Link href={"/services/therapy-type/group-therapy"}>
+                          Group Therapy
+                        </Link>
                       </DropdownMenuItem>
                     </DropdownMenuSubContent>
                   </DropdownMenuPortal>
