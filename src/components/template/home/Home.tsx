@@ -2,6 +2,7 @@ import {
   HeroSection,
   HowPsychotherapyCanHelp,
   HowTherapyWorks,
+  InsuranceCoverage,
   MeetOurTeam,
   TherapeuticModalities,
   TherapistInVaughan,
@@ -18,6 +19,7 @@ export function Home() {
       <TherapeuticModalities />
       <HowTherapyWorks />
       <WhyChooseUs />
+      <InsuranceCoverage />
     </section>
   );
 }

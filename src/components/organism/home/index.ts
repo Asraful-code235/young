@@ -5,6 +5,7 @@ import { MeetOurTeam } from './MeetOurTeam';
 import { TherapeuticModalities } from './TherapeuticModalities';
 import { HowTherapyWorks } from './HowTherapyWorks';
 import { WhyChooseUs } from './WhyChooseUs';
+import { InsuranceCoverage } from './InsuranceCoverage';
 
 export {
   HeroSection,
@@ -14,4 +15,5 @@ export {
   TherapeuticModalities,
   HowTherapyWorks,
   WhyChooseUs,
+  InsuranceCoverage,
 };
