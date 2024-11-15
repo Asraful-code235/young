@@ -4,6 +4,8 @@ import { TimeLine } from "./TimeLine";
 import { VerticalTimeLine } from "./VerticalTimeLine";
 import { TwoRowGridWithSvg } from "./TwoRowGridWithSvg";
 import { Banner } from "./Banner";
+import { Faq } from "./Faq";
+import { OurApproach } from "./OurApproach";
 
 export {
   HeroSection,
@@ -12,4 +14,6 @@ export {
   VerticalTimeLine,
   TwoRowGridWithSvg,
   Banner,
+  Faq,
+  OurApproach,
 };

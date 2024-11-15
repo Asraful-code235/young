@@ -9,33 +9,38 @@ import {
   BenefitsTeenTherapy,
   GroupTherapyforTeens,
   LongTermGrowth,
-  TherapyCanHelp,
 } from "@/components/organism/services/teen-therapy";
 import { TwoGridSection } from "@/components/organism";
+import { AboutSection } from "@/components/organism/services/couple-therapy/AboutSection";
 
-import teentherapyheroImage from "/public/services/teentherapyheroImage.webp";
-import TeenTherapyAboutImage from "/public/services/TeenTherapyAboutImage.webp";
+import coupletherapyheroImage from "/public/services/coupletherapyheroImage.webp";
+import coupletherapyaboutimage from "/public/services/coupletherapyaboutimage.webp";
 import teentherapymaximumsuccess from "/public/services/teentherapymaximumsuccess.webp";
 import benefitofteentherapyImage from "/public/services/benefitofteentherapy.webp";
 import teentherapylongtermgrowth from "/public/services/teentherapylongtermgrowth.webp";
 
-export function TeenTherapy() {
+export function CouplesTherapy() {
   return (
     <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
       <div className="max-w-[1440px] w-full mx-auto ~px-4/16">
         <HeroSection props={HeroSectionData} />
       </div>
-      <TherapyCanHelp />
+      <div className="max-w-[1440px] mx-auto ~px-5/16">
+        <TwoGridSection
+          renderComponent={() => <AboutSection />}
+          image={coupletherapyaboutimage}
+        />
+      </div>
       <OurApproach
         data={timelineData}
-        showBg={false}
-        title="Our Teen Therapy Approach"
-        description="Every teen’s journey is different. At Young Sprouts Therapy, we tailor our therapeutic approach to the individual needs of each teen. Our therapists integrate a variety of evidence-based modalities to help teens navigate emotional challenges, behavioural issues, and peer or academic stress."
+        showBg={true}
+        title="Our Couples Therapy Approach"
+        description="We understand that every relationship is unique, which is why our approach is tailored to your specific needs. Our therapists use a blend of evidence-based modalities to help you and your partner address your concerns and rebuild a stronger, more resilient relationship."
       />
       <div className="~py-5/28 max-w-[1440px] w-full mx-auto ~px-5/16">
         <TwoGridSection
           renderComponent={() => <GroupTherapyforTeens />}
-          image={TeenTherapyAboutImage}
+          image={coupletherapyaboutimage}
         />
         <div className="~py-12/24">
           <Banner data={BannerData} />
@@ -72,31 +77,26 @@ export function TeenTherapy() {
   );
 }
 const HeroSectionData = {
-  image: teentherapyheroImage,
+  image: coupletherapyheroImage,
   title:
-    "Teen Therapy in Vaughan & Thornhill: Building Emotional Strength and Confidence",
+    "Couples Therapy in Vaughan & Thornhill: Strengthen Your Relationship, Rebuild Trust",
 };
 
 const timelineData = [
   {
-    title: "Cognitive-Behavioural Therapy (CBT)",
+    title: "The Gottman Method for Relationship Repair",
     description:
-      "CBT helps children identify negative thought patterns and learn healthier ways of thinking and behaving. This is particularly helpful for anxiety, mood disorders, and low self-esteem.",
+      "The Gottman Method is a research-based approach that helps couples improve communication, resolve conflict, and rebuild emotional connection. We use proven strategies to help couples identify negative patterns, such as criticism or defensiveness, and replace them with healthier ways of relating.",
   },
   {
-    title: "Dialectical Behaviour Therapy (DBT) for Emotional Regulation",
+    title: "Cognitive-Behavioural Therapy (CBT) for Couples",
     description:
-      "DBT helps teens who struggle with emotional regulation, impulsivity, or defiance. By teaching mindfulness, distress tolerance, and healthy coping strategies, DBT supports teens in managing intense emotions and building healthier relationships with family and friends.",
+      "CBT helps couples understand how their thoughts and behaviours contribute to conflict. By changing the way you communicate and think about your relationship, CBT can help resolve longstanding issues and improve emotional closeness.",
   },
   {
-    title: "Art Therapy",
+    title: "Emotionally Focused Therapy (EFT)",
     description:
-      "Art Therapy offers a creative outlet for teens to explore and express their emotions, particularly when verbal communication feels challenging. This non-verbal approach is especially useful for teens experiencing anxiety, trauma, or self-esteem issues.",
-  },
-  {
-    title: "Mindfulness and Stress-Reduction Techniques",
-    description:
-      "For teens facing school-related stress, peer pressure, or life changes, mindfulness techniques provide practical strategies to reduce anxiety and stay grounded. These skills can be applied to a variety of situations, from managing exams to navigating social challenges.",
+      "EFT focuses on the emotional bonds between partners. It helps couples identify the emotions driving conflict, fostering a deeper understanding of each other’s needs. This approach is especially helpful for couples dealing with trust issues or emotional distance",
   },
 ];
 

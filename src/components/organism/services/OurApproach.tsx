@@ -1,4 +1,5 @@
-import { VerticalTimeLine } from "../VerticalTimeLine";
+import { cn } from "@/lib/utils";
+import { VerticalTimeLine } from "./VerticalTimeLine";
 
 type DataType = {
   title: string;
@@ -7,20 +8,25 @@ type DataType = {
 
 type Props = {
   data: DataType[];
+  showBg: boolean;
+  title: string;
+  description: string;
 };
 
-export function OurApproach({ data }: Props) {
+export function OurApproach({
+  data,
+  showBg = false,
+  title,
+  description,
+}: Props) {
   return (
-    <div className="w-full  bg-[#F4FDFF] py-16 ~px-5/16">
+    <div className={cn("w-full py-16 ~px-5/16", showBg ? "bg-[#F4FDFF]" : "")}>
       <div className="flex flex-col gap-6 mx-auto max-w-screen-xl">
         <h2 className="text-center font-medium ~text-2xl/3xl text-primary">
-          Our Child Therapy Approach
+          {title}
         </h2>
         <p className="text-center leading-6 max-w-[846px] mx-auto">
-          Our therapy approach is personalized for each child, integrating a
-          range of modalities based on their individual needs. We use a blend of
-          traditional and creative therapeutic approaches to engage children in
-          a way that resonates with them.
+          {description}
         </p>
       </div>
       <div className="max-w-[690px] w-full mx-auto mt-6">

@@ -1,5 +1,11 @@
 import { TherapyCanHelp } from "./TherapyCanHelp";
-import { OurApproach } from "./OurApproach";
 import { GroupTherapyforTeens } from "./GroupTherapyforTeens";
+import { BenefitsTeenTherapy } from "./BenefitsofTeenTherapy";
+import { LongTermGrowth } from "./LongTermGrowth";
 
-export { TherapyCanHelp, OurApproach, GroupTherapyforTeens };
+export {
+  TherapyCanHelp,
+  GroupTherapyforTeens,
+  BenefitsTeenTherapy,
+  LongTermGrowth,
+};

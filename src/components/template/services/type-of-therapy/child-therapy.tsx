@@ -1,6 +1,7 @@
 import {
   AboutSection,
   HeroSection,
+  OurApproach,
   TimeLine,
   TwoRowGridWithSvg,
 } from "@/components/organism/services";
@@ -9,7 +10,6 @@ import { TwoGridSection } from "@/components/organism";
 import {
   EmphasisSection,
   LongTermGrowth,
-  OurApproach,
 } from "@/components/organism/services/child-therapy";
 
 import ChildTherapyHeroImage from "/public/services/childtherapyheroimage.webp";
@@ -29,7 +29,12 @@ export function ChildTherapy() {
           image={childtherapyAboutImage}
         />
       </div>
-      <OurApproach data={timelineData} />
+      <OurApproach
+        data={timelineData}
+        showBg={true}
+        title="Our Child Therapy Approach"
+        description="Our therapy approach is personalized for each child, integrating a range of modalities based on their individual needs. We use a blend of traditional and creative therapeutic approaches to engage children in a way that resonates with them."
+      />
       <div className="max-w-[1440px] mx-auto w-full ~px-5/16 ~py-8/28">
         <TwoRowGridWithSvg
           renderComponent={() => (
@@ -64,7 +69,7 @@ export function ChildTherapy() {
 
 const HeroSectionData = {
   image: ChildTherapyHeroImage,
-  title: "Parenting Counselling in Vaughan & Thornhill",
+  title: "Child Therapy",
 };
 
 const AboutSectionData = {

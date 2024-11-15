@@ -1,5 +1,6 @@
 import {
   ChildTherapy,
+  CouplesTherapy,
   ParentingCounselling,
   TeenTherapy,
 } from "@/components/pages/services/type-of-therapy";
@@ -16,6 +17,7 @@ export async function generateMetadata({ params }: TherapyTypeProps) {
     "parenting-counselling": "Parenting Counselling",
     "child-therapy": "Child Therapy",
     "teen-therapy": "Teen Therapy",
+    "couples-therapy": "Couples Therapy",
   };
 
   const title = titles[params.slug] || "Young Sprouts Therapy";
@@ -39,6 +41,9 @@ export default async function TherapyTypePage({
       break;
     case "teen-therapy":
       content = <TeenTherapy />;
+      break;
+    case "couples-therapy":
+      content = <CouplesTherapy />;
       break;
 
     default:
