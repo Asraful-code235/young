@@ -1,28 +1,16 @@
 import {
-  Banner,
   BlockWithPoints,
   Faq,
   HeroSection,
   OurApproach,
   TimeLine,
   TwoFlexSection,
-  TwoRowGridWithSvg,
   WhatIsSection,
   WhyChooseUs,
 } from "@/components/organism/services";
-import { TwoGridSection } from "@/components/organism";
-import {
-  BenefitsofCoupleTherapy,
-  IssuesWeHelpCouples,
-  LongTermGrowth,
-} from "@/components/organism/services/couple-therapy";
 
 import adhdheroImage from "/public/services/adhdheroImage.webp";
 import adhdcoaching from "/public/services/adhdcoaching.webp";
-import issueswehelp from "/public/services/issueswehelp.webp";
-import couplebannerimage from "/public/services/couplebannerimage.webp";
-import benefitofteentherapyImage from "/public/services/benefitofteentherapy.webp";
-import localcouplestherapy from "/public/services/localcouplestherapy.webp";
 
 export function AdhdTherapy() {
   return (
@@ -170,13 +158,6 @@ const WhyChooseUsData = {
         "Incorporating mindfulness helps clients with ADHD stay focused, manage stress, and reduce impulsivity by improving self-awareness.",
     },
   ],
-};
-
-const BannerData = {
-  title: "Pre-Marital Counselling",
-  description:
-    "Are you considering marriage and want to ensure a strong foundation for your relationship? Pre-marital counselling is a valuable investment in your future. At Young Sprouts Therapy, we help couples explore important topics such as communication, financial management, and family planning. Our goal is to help you and your partner establish healthy relationship patterns that will serve you throughout your marriage.",
-  image: couplebannerimage,
 };
 
 const FaqData = {

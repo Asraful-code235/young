@@ -10,8 +10,8 @@ export function SpecificChallenges() {
         <p className="text-center leading-6 max-w-[948px] mx-auto">
           At Young Sprouts Therapy, we understand that the challenges faced by
           kids and teens differ based on their age and developmental stage.
-          That's why we offer age-specific group therapy programs that target
-          social-emotional learning, self-esteem, and leadership skills.
+          That&apos;s why we offer age-specific group therapy programs that
+          target social-emotional learning, self-esteem, and leadership skills.
         </p>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-11 max-w-[1245px] mx-auto">

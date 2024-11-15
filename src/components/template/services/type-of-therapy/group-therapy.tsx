@@ -4,15 +4,9 @@ import {
   HeroSection,
   OurApproach,
   SubscriptionBanner,
-  TimeLine,
-  TwoRowGridWithSvg,
 } from "@/components/organism/services";
 import { TwoGridSection } from "@/components/organism";
-import {
-  BenefitsofCoupleTherapy,
-  IssuesWeHelpCouples,
-  LongTermGrowth,
-} from "@/components/organism/services/couple-therapy";
+
 import { AboutSection } from "@/components/organism/services/group-therapy/AboutSection";
 
 import grouptherapyheroimage from "/public/services/grouptherapyheroimage.webp";
@@ -23,7 +17,6 @@ import groupsubscriptionimage from "/public/services/groupsubscriptionimage.webp
 import groupbannerimage from "/public/services/groupbannerimage.webp";
 import mindfulnessImage from "/public/services/mindfulness.webp";
 import workshopforparents from "/public/services/workshopforparents.webp";
-import localcouplestherapy from "/public/services/localcouplestherapy.webp";
 
 import {
   GroupSettings,
