@@ -1,4 +1,6 @@
 import fluid, { extract, screens, fontSize } from "fluid-tailwind";
+import tailwindcssAnimate from "tailwindcss-animate";
+import typographyPlugin from "@tailwindcss/typography";
 
 /** @type {import('tailwindcss').Config} */
 
@@ -55,9 +57,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require("tailwindcss-animate"),
-    require("@tailwindcss/typography"),
-    fluid,
-  ],
+  plugins: [tailwindcssAnimate, typographyPlugin, fluid],
 };
