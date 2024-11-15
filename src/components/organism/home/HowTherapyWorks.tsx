@@ -2,7 +2,7 @@ import { Card } from "@/components/ui/card";
 
 export function HowTherapyWorks() {
   return (
-    <section className="~py-16/28 max-w-[1440px] mx-auto ~px-5/16 flex flex-col gap-14 lg:gap-12 overflow-hidden">
+    <section className="~py-16/28 max-w-[1440px] mx-auto ~px-5/10 flex flex-col gap-14 lg:gap-12 overflow-hidden">
       <div className="flex flex-col gap-[22px]">
         <h2 className="~text-xl/3xl font-medium text-center text-primary">
           How Therapy Works ?

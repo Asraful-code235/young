@@ -7,6 +7,10 @@ import { Banner } from "./Banner";
 import { Faq } from "./Faq";
 import { OurApproach } from "./OurApproach";
 import { SubscriptionBanner } from "./SubscriptionBanner";
+import { WhatIsSection } from "./WhatIsSection";
+import { BlockWithPoints } from "./BlockWithPoints";
+import { TwoFlexSection } from "./TwoFlexSection";
+import { WhyChooseUs } from "./WhyChooseUs";
 
 export {
   HeroSection,
@@ -18,4 +22,8 @@ export {
   Faq,
   OurApproach,
   SubscriptionBanner,
+  WhatIsSection,
+  BlockWithPoints,
+  TwoFlexSection,
+  WhyChooseUs,
 };

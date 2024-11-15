@@ -28,7 +28,7 @@ export function TwoGridSection({
     >
       <article
         className={cn(
-          "order-2 lg:order-1",
+          "order-2 lg:order-1 h-full flex lg:items-center lg:justify-center",
           row === 5 ? "grid-cols-1 lg:col-span-3" : "",
           rtl ? "order-2 lg:order-2" : ""
         )}
@@ -37,7 +37,7 @@ export function TwoGridSection({
       </article>
       <div
         className={cn(
-          "relative w-full max-lg:h-[322px] h-full rounded-3xl overflow-hidden order-1 lg:order-2",
+          "relative w-full max-lg:h-[322px] lg:min-h-[500px] h-full rounded-3xl overflow-hidden order-1 lg:order-2",
           row === 5 ? "grid-cols-1 lg:col-span-2" : "",
           roundedRight ? "rounded-3xl rounded-tr-none  " : "",
           rtl ? "order-1 lg:order-1" : ""

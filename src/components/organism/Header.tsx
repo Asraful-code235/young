@@ -22,7 +22,7 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenAbout, setIsOpenAbout] = useState(false);
   return (
-    <header className="w-full flex items-center justify-between gap-4 py-1.5 max-w-[1440px] mx-auto ~px-5/16 ">
+    <header className="w-full flex items-center justify-between gap-4 py-1.5 max-w-[1440px] mx-auto ~px-5/10 ">
       <Link href={"/"}>
         <Image
           src={Logo}
@@ -112,31 +112,81 @@ export function Header() {
                   <DropdownMenuPortal>
                     <DropdownMenuSubContent>
                       <DropdownMenuItem>
-                        <span>ADHD Coaching & Therapy</span>
+                        <Link
+                          href={"/services/conditions-we-support/adhd-therapy"}
+                        >
+                          ADHD Coaching & Therapy
+                        </Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem>
-                        <span>Anxiety Therapy</span>
+                        <Link
+                          href={
+                            "/services/conditions-we-support/anxiety-therapy"
+                          }
+                        >
+                          Anxiety Therapy
+                        </Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem>
-                        <span>Burnout Therapy</span>
+                        <Link
+                          href={
+                            "/services/conditions-we-support/burnout-therapy"
+                          }
+                        >
+                          Burnout Therapy
+                        </Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem>
-                        <span>Behavioral Therapy</span>
+                        <Link
+                          href={
+                            "/services/conditions-we-support/behavioral-therapy"
+                          }
+                        >
+                          Behavioral Therapy
+                        </Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem>
-                        <span>Depression Therapy</span>
+                        <Link
+                          href={
+                            "/services/conditions-we-support/depression-therapy"
+                          }
+                        >
+                          Depression Therapy
+                        </Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem>
-                        <span>Grief Counselling</span>
+                        <Link
+                          href={"/services/conditions-we-support/grief-therapy"}
+                        >
+                          Grief Therapy
+                        </Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem>
-                        <span>Trauma Therapy</span>
+                        <Link
+                          href={
+                            "/services/conditions-we-support/trauma-therapy"
+                          }
+                        >
+                          Trauma Therapy
+                        </Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem>
-                        <span>Autism Spectrum</span>
+                        <Link
+                          href={
+                            "/services/conditions-we-support/autism-therapy"
+                          }
+                        >
+                          Autism Therapy
+                        </Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem>
-                        <span>Clinical Supervision</span>
+                        <Link
+                          href={
+                            "/services/conditions-we-support/clinical-supervision"
+                          }
+                        >
+                          Clinical Supervision
+                        </Link>
                       </DropdownMenuItem>
                     </DropdownMenuSubContent>
                   </DropdownMenuPortal>

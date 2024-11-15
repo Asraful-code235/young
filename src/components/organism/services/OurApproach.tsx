@@ -20,7 +20,7 @@ export function OurApproach({
   description,
 }: Props) {
   return (
-    <div className={cn("w-full py-16 ~px-5/16", showBg ? "bg-[#F4FDFF]" : "")}>
+    <div className={cn("w-full py-16 ~px-5/10", showBg ? "bg-[#F4FDFF]" : "")}>
       <div className="flex flex-col gap-6 mx-auto max-w-screen-xl">
         <h2 className="text-center font-medium ~text-2xl/3xl text-primary">
           {title}

@@ -15,7 +15,7 @@ export function HeroSection() {
           alt="hero_bg"
         />
 
-        <section className="max-w-[1440px] mx-auto ~px-5/16 z-40 w-full flex flex-col gap-14 lg:gap-24">
+        <section className="max-w-[1440px] mx-auto ~px-5/10 z-40 w-full flex flex-col gap-14 lg:gap-24">
           <div className="flex flex-col gap-[18px]">
             <Title size="big" type="h1" className="flex flex-col ~text-xl/6xl">
               <span className="~text-xl/5xl font-medium">

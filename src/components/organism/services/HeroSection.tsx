@@ -6,6 +6,7 @@ import HeroImage from "/public/services/Parenting Counselling.webp";
 type props = {
   image: StaticImageData | string;
   title: string;
+  description?: string;
 };
 
 type PropType = {
@@ -32,6 +33,11 @@ export function HeroSection({ props }: PropType) {
           <h1 className="text-center w-full max-w-[820px] mx-auto text-white ~text-base/4xl font-bold">
             {props?.title}
           </h1>
+          {props?.description ? (
+            <p className="text-base leading-6 text-center text-white max-w-[807px] mx-auto">
+              {props.description}
+            </p>
+          ) : null}
         </header>
         <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-6">
           <Button
