@@ -1,6 +1,9 @@
 import {
   AdhdTherapy,
   AnxietyTherapy,
+  BehavioralTherapy,
+  BurnOutTherapy,
+  DepressionTherapy,
 } from "@/components/pages/services/conditions-we-support";
 
 interface TherapyTypeProps {
@@ -14,6 +17,9 @@ export async function generateMetadata({ params }: TherapyTypeProps) {
   const titles: Record<string, string> = {
     "adhd-therapy": "Adhd Therapy",
     "anxiety-therapy": "Anxiety Therapy",
+    "burnout-therapy": "Burnout Therapy",
+    "behavioral-therapy": "Behavioral Therapy",
+    "depression-therapy": "Depression Therapy",
   };
 
   const title = titles[params.slug] || "Young Sprouts Therapy";
@@ -34,6 +40,15 @@ export default async function ConditionsWeSupportPage({
       break;
     case "anxiety-therapy":
       content = <AnxietyTherapy />;
+      break;
+    case "burnout-therapy":
+      content = <BurnOutTherapy />;
+      break;
+    case "behavioral-therapy":
+      content = <BehavioralTherapy />;
+      break;
+    case "depression-therapy":
+      content = <DepressionTherapy />;
       break;
 
     default:

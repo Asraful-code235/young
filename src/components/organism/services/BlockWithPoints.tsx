@@ -5,14 +5,14 @@ import { Button } from "@/components/ui/button";
 
 type ListType = {
   title: string;
-  description: string;
+  description?: string;
 };
 
 type DataType = {
   title: string;
-  description: string;
+  description?: string;
   list: ListType[];
-  subTitle: string;
+  subTitle?: string;
 };
 
 type Props = {
@@ -24,7 +24,7 @@ export function BlockWithPoints({ data }: Props) {
     <article className="flex flex-col gap-4">
       <div className="flex flex-col gap-6">
         <h2 className="font-medium ~text-2xl/3xl text-primary">{data.title}</h2>
-        <p className="leading-6">{data.description}</p>
+        <p className="leading-6">{data?.description}</p>
       </div>
       <ul className="flex flex-col gap-4">
         {data.list.map((item, index) => (
@@ -39,7 +39,9 @@ export function BlockWithPoints({ data }: Props) {
               />
               <p className="text-primary font-medium">{item.title}</p>
             </div>
-            <p className="leading-6">{item.description}</p>
+            {item.description && (
+              <p className="leading-6">{item?.description}</p>
+            )}
           </li>
         ))}
       </ul>

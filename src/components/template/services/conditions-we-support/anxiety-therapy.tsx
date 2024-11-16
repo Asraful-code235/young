@@ -1,4 +1,5 @@
 import {
+  Banner,
   BlockWithPoints,
   Faq,
   HeroSection,
@@ -10,26 +11,27 @@ import {
 } from "@/components/organism/services";
 
 import anxietyherosection from "/public/services/anxietyherosection.webp";
-import adhdcoaching from "/public/services/adhdcoaching.webp";
+import anxietyherosectionimage from "/public/services/anxietyherosectionimage.webp";
+import anxietybannerimage from "/public/services/anxietybannerimage.webp";
 
 export function AnxietyTherapy() {
   return (
     <section className=" ~pb-16/20 pt-6 lg:pt-2.5 flex flex-col gap-7">
       <div className="max-w-[1440px] w-full mx-auto ~px-5/10">
         <HeroSection props={HeroSectionData} />
-        <WhatIsSection data={WhatIsAdHd} />
+        <WhatIsSection data={WhatIsAnxiety} />
       </div>
       <div className="max-w-[1440px] w-full mx-auto ~px-5/10 ~py-10/16">
         <TwoFlexSection
-          renderComponent={() => <BlockWithPoints data={AdhdTherapyData} />}
-          image={adhdcoaching}
+          renderComponent={() => <BlockWithPoints data={AnxietyTherapyData} />}
+          image={anxietyherosectionimage}
         />
       </div>
       <OurApproach
         data={timelineData}
         showBg={true}
-        title="ADHD Coaching for Adults"
-        description="Many adults with ADHD face ongoing difficulties with time management, organization, and emotional regulation. Our ADHD clinic offers specialized ADHD coaching for adults, focusing on executive functioning and building the skills necessary for success in work and personal life. Our ADHD coaching for adults includes:"
+        title="Types of Anxiety We Treat"
+        description="At our clinic, we specialize in treating a wide range of anxiety disorders:"
       />
       <div className="py-16">
         <WhyChooseUs data={WhyChooseUsData} />
@@ -37,15 +39,17 @@ export function AnxietyTherapy() {
       <div className="flex flex-col gap-8  overflow-hidden max-w-[1250.5px] mx-auto w-full ~px-5/10">
         <div className="flex flex-col gap-6">
           <h2 className="font-medium ~text-2xl/3xl text-center text-primary ">
-            Benefits of ADHD Coaching and Therapy
+            Who Benefits from Anxiety Therapy?
           </h2>
           <p className="text-center leading-6 max-w-[846px] mx-auto">
-            At Young Sprouts Therapy, our ADHD coaching and ADHD therapy
-            programs offer long-term benefits for both children and adults.
-            Clients can expect to see improvements in:
+            Through anxiety therapy at Young Sprouts Therapy, clients can expect
+            the following benefits:
           </p>
         </div>
         <TimeLine props={TimeLineSectionData} />
+      </div>
+      <div className="~pt-12/24 max-w-[1440px] ~px-5/10 w-full mx-auto">
+        <Banner data={BannerData} />
       </div>
       <div className=" max-w-[1440px] w-full mx-auto ~px-5/10">
         <Faq data={FaqData} />
@@ -60,31 +64,31 @@ const HeroSectionData = {
     "Therapy to support and equip children, teens and adults with strategies for dealing with anxiety",
 };
 
-const WhatIsAdHd = {
-  title: "What Is ADHD Coaching?",
+const WhatIsAnxiety = {
+  title: "What Is Anxiety Therapy?",
   description:
-    "ADHD Coaching focuses on helping individuals with Attention Deficit Hyperactivity Disorder (ADHD) develop practical skills to manage the daily challenges associated with ADHD. Whether it’s improving focus, enhancing time management, or controlling impulsivity, ADHD coaching is goal-oriented and provides clients with concrete strategies to improve their productivity and quality of life. At Young Sprouts Therapy, we provide ADHD coaching as part of our comprehensive services at our ADHD clinic. Our team works with children, teens, and adults to create personalized coaching plans that help clients succeed at school, work, and home. We offer both in-person ADHD therapy sessions in Vaughan and Thornhill, as well as virtual coaching for your convenience.",
+    "Anxiety therapy is a therapeutic process designed to help individuals manage and overcome anxiety symptoms that interfere with their daily lives. Anxiety can manifest as worry, panic, or uncontrollable thoughts, and therapy helps reduce these feelings by addressing their root causes. Through various evidence-based approaches, such as Cognitive-Behavioural Therapy (CBT) and Mindfulness, anxiety therapy focuses on helping clients regain control of their mental well-being. At Young Sprouts Therapy, we provide tailored anxiety therapy for both children and adults, offering in-person sessions in Vaughan and Thornhill as well as virtual therapy options.",
 };
 
-const AdhdTherapyData = {
-  title: "ADHD Therapy & Coaching for Children and Teens",
+const AnxietyTherapyData = {
+  title: "Anxiety Therapy for Kids and Teens",
   description:
-    "ADHD therapy and coaching for children and teens at our ADHD clinic focuses on managing behavioral challenges and improving academic performance. We provide structured support for families, ensuring that children receive guidance both in therapy and at school. Our ADHD coaching programs for young clients include:",
+    "Children and teens can experience anxiety in ways that differ from adults, often showing signs of social anxiety, school-related stress, or separation anxiety. At Young Sprouts Therapy, we offer specialized anxiety therapy tailored for younger clients, helping them manage the unique pressures they face during these developmental years.",
   list: [
     {
-      title: "School Collaboration:",
+      title: "School and Social Anxiety:",
       description:
-        "We partner with schools to ensure students with ADHD receive appropriate support and accommodations. Our ADHD coaches work with teachers to implement strategies that help improve focus and behavior in the classroom.",
+        "Kids and teens often feel overwhelmed by school demands or peer pressure. Our therapists work with them to develop coping strategies that improve their confidence and ease their anxieties in social situations.",
     },
     {
-      title: "Social Skills Coaching:",
+      title: "Family Involvement:",
       description:
-        "Children and teens with ADHD often face challenges in social interactions. Through ADHD coaching, we help young clients build stronger relationships by improving their communication and social skills.",
+        "Anxiety therapy for children and teens often involves family sessions to ensure the home environment supports the child’s progress. Parents learn how to best support their child’s emotional health.",
     },
     {
-      title: "Behavioral Therapy:",
+      title: "Building Emotional Resilience:",
       description:
-        "By combining ADHD therapy with behavioral interventions, we help children and teens manage hyperactivity and impulsivity, fostering better behavior at home and in school.",
+        "Through play-based therapy and cognitive-behavioural techniques, children and teens learn to recognize their anxious feelings and develop practical ways to manage them in daily life.",
     },
   ],
   subTitle:
@@ -93,91 +97,86 @@ const AdhdTherapyData = {
 
 const timelineData = [
   {
-    title: "Time Management and Organization:",
-    description:
-      "We help clients develop personalized systems for managing their schedules, reducing procrastination, and completing tasks on time",
+    title:
+      "GeneraGeneralized Anxiety Disorder (GAD):lized Anxiety Disorder (GAD):",
+    description: "Chronic worry and fear that disrupt daily life.",
   },
   {
-    title: "Emotional Regulation Coaching:",
-    description:
-      "Adults with ADHD may struggle with frustration and impulsive decision-making. Our coaches provide tools to improve emotional control and stress management in everyday situations.",
+    title: "Social Anxiety Disorder:",
+    description: "Fear and avoidance of social situations.",
   },
   {
-    title: "Career and Workplace Coaching:",
+    title: "Phobias",
     description:
-      "Our ADHD coaching also focuses on professional success, offering strategies for improving focus, managing distractions, and increasing productivity at work.",
+      "Intense fear of specific objects or situations, like heights or animals.",
   },
   {
-    title: "Comprehensive ADHD Services at Our Clinic",
-    description:
-      "Our ADHD clinic in Vaughan and Thornhill offers a wide range of ADHD-related services to support clients of all ages. From ADHD coaching to behavioral therapy, we create individualized plans that address each client's unique needs. Our clinic specializes in:",
-  },
-  {
-    title: "Executive Functioning Coaching:",
-    description:
-      "Clients learn essential skills like planning, goal-setting, and task management to improve their executive functioning, a critical area often impacted by ADHD.",
-  },
-  {
-    title: "Family Coaching and Support:",
-    description:
-      "We work closely with families to provide guidance on how to support a loved one with ADHD. Family involvement ensures consistency in the strategies learned during coaching or therapy sessions.",
+    title: "Health Anxiety (Hypochondria):",
+    description: "Persistent worry about one's health.",
   },
 ];
 
 const TimeLineSectionData = [
   {
-    title: "Focus and Productivity:",
+    title: "Reduced Symptoms:",
     description:
-      "ADHD coaching helps clients develop strategies for staying on task, reducing distractions, and increasing productivity.",
+      "Therapy helps decrease the intensity of anxious thoughts and feelings, giving clients more control over their emotional responses.",
   },
   {
-    title: "Emotional Regulation:",
+    title: "Improved Coping Strategies:",
     description:
-      "Through ADHD therapy, clients learn how to manage their emotions more effectively, reducing frustration and impulsive reactions.",
+      "Clients learn effective techniques to handle stressful situations without falling into the cycle of anxiety.",
   },
   {
-    title: "Academic and Career Success:",
+    title: "Increased Emotional Regulation:",
     description:
-      "Both students and professionals benefit from the skills learned in ADHD coaching, which directly impacts their performance at school or work.",
+      "Therapy provides tools to better manage emotional reactions to anxiety-inducing situations.",
   },
 ];
 
-const WhyChooseUsData = {
-  title: "ADHD Therapy for Emotional and Behavioral Challenges",
+const BannerData = {
+  title: "Who Benefits from Anxiety Therapy?",
   description:
-    "While ADHD coaching focuses on skill-building and practical strategies, our ADHD therapy programs target emotional and behavioral challenges associated with ADHD. For clients dealing with anxiety, depression, or impulsivity, our therapists provide tailored ADHD therapy that focuses on:",
+    "Anxiety therapy is suitable for anyone who struggles with persistent worry, panic attacks, or phobias. It’s particularly helpful for individuals whose anxiety impacts their work, school, or social lives. At Young Sprouts Therapy, we work with both children and adults to develop personalized therapy plans that target the specific nature of their anxiety.",
+  image: anxietybannerimage,
+};
+
+const WhyChooseUsData = {
+  title: "Our Approach to Anxiety Therapy",
+  description:
+    "Our anxiety therapy programs focus on proven approaches like Cognitive-Behavioural Therapy (CBT), which is considered the most effective method for treating anxiety. We combine CBT with mindfulness techniques to help clients become more aware of their thoughts and manage their anxiety through present-moment awareness.",
   list: [
     {
       title: "Cognitive-Behavioural Therapy (CBT):",
       description:
-        "CBT helps clients challenge negative thought patterns and develop healthier emotional responses, reducing symptoms of frustration and stress associated with ADHD.",
+        "CBT helps individuals recognize negative thinking patterns and reframe them into more realistic, balanced thoughts. This approach is effective for treating panic disorder, social anxiety, and generalized anxiety.",
     },
     {
-      title: "Mindfulness Techniques:",
+      title: "Mindfulness :",
       description:
-        "Incorporating mindfulness helps clients with ADHD stay focused, manage stress, and reduce impulsivity by improving self-awareness.",
+        "IMindfulness techniques encourage clients to focus on the present and manage their anxiety in a calm, non-judgmental way. This approach can be especially beneficial for health anxiety and phobias.",
     },
   ],
 };
 
 const FaqData = {
   description:
-    "Book a Group Therapy Session for Kids and Teens in Vaughan & Thornhill Are you ready to help your child or teen build social skills and emotional resilience? Contact us today to book a group therapy session at our Vaughan or Thornhill office. We offer both in-person and virtual sessions to meet your family’s needs. Fill out our online contact form or schedule a free consultation to get started.",
+    "Book an Anxiety Therapy Session in Vaughan & Thornhill Are you or a loved one struggling with anxiety? Our tailored anxiety therapy programs are designed to help you manage your symptoms and regain control of your life. Contact us today to book an anxiety therapy session at our Vaughan or Thornhill office. We offer both in-person and virtual therapy. Fill out our online contact form or schedule a free consultation to get started.",
   accordion: [
     {
-      title: "What is the difference between ADHD coaching and ADHD therapy ?",
+      title: "How long dose anxiety therapy take ?",
       description:
-        "ADHD coaching focuses on practical strategies like time management, organization, and goal-setting to help clients manage their ADHD in daily life. ADHD therapy, on the other hand, addresses the emotional and behavioral challenges associated with ADHD, such as impulsivity, anxiety, and depression.",
+        "The duration of therapy varies, but most clients see improvement within 8 to 12 sessions. Therapy for anxiety is typically a short-to-medium-term process, depending on the severity of the symptoms and personal goals.",
     },
     {
-      title: "Is ADHS coaching effective for adults ? ",
+      title: "Can anxiety therapy be combined with medication ? ",
       description:
-        "Yes. ADHD coaching for adults is highly effective, especially for improving executive functioning skills like planning, organizing, and prioritizing tasks. It’s also beneficial for improving emotional regulation and workplace success.",
+        "Yes, anxiety therapy can be combined with medication. Many clients benefit from a combined approach, with therapy addressing cognitive and behavioral patterns, and medication providing relief from more severe symptoms.",
     },
     {
-      title: "Can ADHD coaching be done virtually ? ",
+      title: "Is virtual anxiety therapy effectives ? ",
       description:
-        "Absolutely. At Young Sprouts Therapy, we offer virtual ADHD coaching sessions for both children and adults, allowing clients to receive personalized support from the comfort of their own homes.",
+        "Absolutely. At Young Sprouts Therapy, our virtual anxiety therapy sessions are just as effective as in-person sessions, offering flexibility for clients who prefer remote care.",
     },
   ],
 };
