@@ -1,4 +1,5 @@
 import {
+  BookingConsultation,
   HeroSection,
   HowPsychotherapyCanHelp,
   HowTherapyWorks,
@@ -22,6 +23,7 @@ export function Home() {
       <WhyChooseUs />
       <InsuranceCoverage />
       <PositiveOutcomes />
+      <BookingConsultation />
     </section>
   );
 }

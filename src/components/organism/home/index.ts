@@ -7,6 +7,7 @@ import { HowTherapyWorks } from './HowTherapyWorks';
 import { WhyChooseUs } from './WhyChooseUs';
 import { InsuranceCoverage } from './InsuranceCoverage';
 import { PositiveOutcomes } from './PositiveOutcomes';
+import { BookingConsultation } from './BookingConsultation';
 
 export {
   HeroSection,
@@ -18,4 +19,5 @@ export {
   WhyChooseUs,
   InsuranceCoverage,
   PositiveOutcomes,
+  BookingConsultation,
 };
