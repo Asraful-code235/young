@@ -15,11 +15,17 @@ type DataType = {
 type Props = {
   data: DataType;
   row?: 2 | 3;
+  showBg?: boolean;
 };
 
-export function WhyChooseUs({ data, row = 2 }: Props) {
+export function WhyChooseUs({ data, row = 2, showBg = false }: Props) {
   return (
-    <section className=" flex flex-col gap-6 lg:gap-14">
+    <section
+      className={cn(
+        "flex flex-col gap-6 lg:gap-14",
+        showBg ? "bg-[#E6F5F7] py-16" : ""
+      )}
+    >
       <div className="flex flex-col gap-6">
         <h2 className="~text-2xl/3xl font-medium text-primary text-center">
           {data.title}

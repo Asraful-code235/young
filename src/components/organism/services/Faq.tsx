@@ -22,7 +22,7 @@ export function Faq({ data }: Props) {
         FAQs
       </h2>
       <ServiceAccordion props={data.accordion} />
-      <p className="text-center leading-6 ">{data.description}</p>
+      <p className="text-center leading-6 text-[#000]">{data.description}</p>
 
       <div className="flex-col flex lg:flex-row gap-6 items-center w-full justify-center">
         <Button className="lg:max-w-[270px] w-full">Book a Free Consult</Button>

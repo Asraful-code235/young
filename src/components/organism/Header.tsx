@@ -198,34 +198,79 @@ export function Header() {
                   <DropdownMenuPortal>
                     <DropdownMenuSubContent>
                       <DropdownMenuItem>
-                        <span>Art Therapy</span>
+                        <Link href={"/services/therapy-modalities/art-therapy"}>
+                          Art Therapy
+                        </Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem>
-                        <span>Anxiety Therapy</span>
+                        <Link
+                          href={
+                            "/services/therapy-modalities/Acceptance-commitment-therapy"
+                          }
+                        >
+                          Acceptance and Commitment Therapy (ACT)
+                        </Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem>
-                        <span>Acceptance and Commitment Therapy (ACT)</span>
+                        <Link
+                          href={
+                            "/services/therapy-modalities/cognitive-behavioral-therapy"
+                          }
+                        >
+                          Cognitive Behavioral Therapy (CBT)
+                        </Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem>
-                        <span>Cognitive Behavioral Therapy (CBT)</span>
+                        <Link
+                          href={
+                            "/services/therapy-modalities/dialectical-behavioral-therapy"
+                          }
+                        >
+                          Dialectical Behavioral Therapy (DBT)
+                        </Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem>
-                        <span>Dialectical Behavioral Therapy (DBT)</span>
+                        <Link
+                          href={
+                            "/services/therapy-modalities/emotion-focused-therapy"
+                          }
+                        >
+                          Emotion Focused Therapy (EFT)
+                        </Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem>
-                        <span>Emotion Focused Therapy (EFT)</span>
+                        <Link
+                          href={
+                            "/services/therapy-modalities/narrative-therapy"
+                          }
+                        >
+                          Narrative Therapy
+                        </Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem>
-                        <span>Narrative Therapy</span>
+                        <Link
+                          href={"/services/therapy-modalities/play-therapy"}
+                        >
+                          Play Therapy
+                        </Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem>
-                        <span>Play Therapy</span>
+                        <Link
+                          href={
+                            "/services/therapy-modalities/parent-child-therapy"
+                          }
+                        >
+                          Parent-Child Interaction Therapy (PCIT)
+                        </Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem>
-                        <span>Parent-Child Interaction Therapy (PCIT) </span>
-                      </DropdownMenuItem>
-                      <DropdownMenuItem>
-                        <span>Solution-Focused Therapy (SFT) </span>
+                        <Link
+                          href={
+                            "/services/therapy-modalities/solution-focused-therapy"
+                          }
+                        >
+                          Solution-Focused Therapy (SFT)
+                        </Link>
                       </DropdownMenuItem>
                     </DropdownMenuSubContent>
                   </DropdownMenuPortal>
