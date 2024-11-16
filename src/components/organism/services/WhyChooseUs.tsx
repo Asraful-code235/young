@@ -8,7 +8,7 @@ type ListType = {
 
 type DataType = {
   title: string;
-  description: string;
+  description?: string;
   list: ListType[];
 };
 
@@ -31,7 +31,7 @@ export function WhyChooseUs({ data, row = 2, showBg = false }: Props) {
           {data.title}
         </h2>
         <p className="text-center leading-6 max-w-[948px] mx-auto">
-          {data.description}
+          {data?.description}
         </p>
       </div>
       <div
