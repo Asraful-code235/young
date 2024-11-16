@@ -4,6 +4,8 @@ import {
   BehavioralTherapy,
   BurnOutTherapy,
   DepressionTherapy,
+  GriefTherapy,
+  TraumaTherapy,
 } from "@/components/pages/services/conditions-we-support";
 
 interface TherapyTypeProps {
@@ -20,6 +22,8 @@ export async function generateMetadata({ params }: TherapyTypeProps) {
     "burnout-therapy": "Burnout Therapy",
     "behavioral-therapy": "Behavioral Therapy",
     "depression-therapy": "Depression Therapy",
+    "grief-therapy": "Grief Therapy",
+    "trauma-therapy": "Trauma Therapy",
   };
 
   const title = titles[params.slug] || "Young Sprouts Therapy";
@@ -49,6 +53,12 @@ export default async function ConditionsWeSupportPage({
       break;
     case "depression-therapy":
       content = <DepressionTherapy />;
+      break;
+    case "grief-therapy":
+      content = <GriefTherapy />;
+      break;
+    case "trauma-therapy":
+      content = <TraumaTherapy />;
       break;
 
     default:

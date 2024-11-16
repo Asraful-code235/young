@@ -3,6 +3,8 @@ import { AnxietyTherapy } from "@/components/template/services/conditions-we-sup
 import { BurnOutTherapy } from "@/components/template/services/conditions-we-support/burnout-therapy";
 import { BehavioralTherapy } from "@/components/template/services/conditions-we-support/behavioral-therapy";
 import { DepressionTherapy } from "@/components/template/services/conditions-we-support/depression-therapy";
+import { GriefTherapy } from "@/components/template/services/conditions-we-support/grief-therapy";
+import { TraumaTherapy } from "@/components/template/services/conditions-we-support/trauma-therapy";
 
 export {
   AdhdTherapy,
@@ -10,4 +12,6 @@ export {
   BurnOutTherapy,
   BehavioralTherapy,
   DepressionTherapy,
+  GriefTherapy,
+  TraumaTherapy,
 };
