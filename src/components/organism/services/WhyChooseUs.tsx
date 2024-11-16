@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import { cn } from "@/lib/utils";
 
 type ListType = {
   title: string;
@@ -13,9 +14,10 @@ type DataType = {
 
 type Props = {
   data: DataType;
+  row?: 2 | 3;
 };
 
-export function WhyChooseUs({ data }: Props) {
+export function WhyChooseUs({ data, row = 2 }: Props) {
   return (
     <section className=" flex flex-col gap-6 lg:gap-14">
       <div className="flex flex-col gap-6">
@@ -26,7 +28,11 @@ export function WhyChooseUs({ data }: Props) {
           {data.description}
         </p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-11 w-full max-w-[1245px] mx-auto">
+      <div
+        className={cn(
+          `grid grid-cols-1 lg:grid-cols-${row} gap-6 lg:gap-11 w-full max-w-[1245px] mx-auto`
+        )}
+      >
         {data.list.map((item, index) => (
           <Card
             key={index}

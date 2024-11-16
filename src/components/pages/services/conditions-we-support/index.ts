@@ -5,6 +5,7 @@ import { BehavioralTherapy } from "@/components/template/services/conditions-we-
 import { DepressionTherapy } from "@/components/template/services/conditions-we-support/depression-therapy";
 import { GriefTherapy } from "@/components/template/services/conditions-we-support/grief-therapy";
 import { TraumaTherapy } from "@/components/template/services/conditions-we-support/trauma-therapy";
+import { AutismTherapy } from "@/components/template/services/conditions-we-support/autism-therapy";
 
 export {
   AdhdTherapy,
@@ -14,4 +15,5 @@ export {
   DepressionTherapy,
   GriefTherapy,
   TraumaTherapy,
+  AutismTherapy,
 };

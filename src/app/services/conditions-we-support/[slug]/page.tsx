@@ -1,6 +1,7 @@
 import {
   AdhdTherapy,
   AnxietyTherapy,
+  AutismTherapy,
   BehavioralTherapy,
   BurnOutTherapy,
   DepressionTherapy,
@@ -24,6 +25,7 @@ export async function generateMetadata({ params }: TherapyTypeProps) {
     "depression-therapy": "Depression Therapy",
     "grief-therapy": "Grief Therapy",
     "trauma-therapy": "Trauma Therapy",
+    "autism-therapy": "Autism Therapy",
   };
 
   const title = titles[params.slug] || "Young Sprouts Therapy";
@@ -59,6 +61,9 @@ export default async function ConditionsWeSupportPage({
       break;
     case "trauma-therapy":
       content = <TraumaTherapy />;
+      break;
+    case "autism-therapy":
+      content = <AutismTherapy />;
       break;
 
     default:
