@@ -4,6 +4,7 @@ import {
   HowTherapyWorks,
   InsuranceCoverage,
   MeetOurTeam,
+  PositiveOutcomes,
   TherapeuticModalities,
   TherapistInVaughan,
   WhyChooseUs,
@@ -20,6 +21,7 @@ export function Home() {
       <HowTherapyWorks />
       <WhyChooseUs />
       <InsuranceCoverage />
+      <PositiveOutcomes />
     </section>
   );
 }

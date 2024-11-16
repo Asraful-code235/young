@@ -6,6 +6,7 @@ import { TherapeuticModalities } from './TherapeuticModalities';
 import { HowTherapyWorks } from './HowTherapyWorks';
 import { WhyChooseUs } from './WhyChooseUs';
 import { InsuranceCoverage } from './InsuranceCoverage';
+import { PositiveOutcomes } from './PositiveOutcomes';
 
 export {
   HeroSection,
@@ -16,4 +17,5 @@ export {
   HowTherapyWorks,
   WhyChooseUs,
   InsuranceCoverage,
+  PositiveOutcomes,
 };
