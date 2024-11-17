@@ -38,7 +38,7 @@ export function InsuranceCoverage() {
               alt={image.alt}
               width={500}
               height={250}
-              className='w-full h-full'
+              className='w-10/12 lg:w-full h-full'
             />
           ))}
         </div>
