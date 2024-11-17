@@ -2,6 +2,7 @@ import {
   AcceptanceTherapy,
   ArtTherapy,
   CognitiveTherapy,
+  DialecticalTherapy,
 } from "@/components/pages/services/therapy-modalities";
 
 interface ContidionsWeSupportTypeProps {
@@ -17,6 +18,7 @@ export async function generateMetadata({
     "art-therapy": "Art Therapy",
     "Acceptance-commitment-therapy": "Acceptance Commitment Therapy",
     "cognitive-behavioral-therapy": "Cognitive Behavioral Therapy",
+    "dialectical-behavioral-therapy": "Dialectical Behavioral Therapy",
   };
 
   const title = titles[params.slug] || "Young Sprouts Therapy";
@@ -40,6 +42,9 @@ export default async function ConditionsWeSupportPage({
       break;
     case "cognitive-behavioral-therapy":
       content = <CognitiveTherapy />;
+      break;
+    case "dialectical-behavioral-therapy":
+      content = <DialecticalTherapy />;
       break;
 
     default:
