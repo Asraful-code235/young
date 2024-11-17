@@ -5,6 +5,7 @@ import { DialecticalTherapy } from "@/components/template/services/therapy-modal
 import { EmotionFocusedTherapy } from "@/components/template/services/therapy-modalities/emotion-focused-therapy";
 import { NarrativeTherapy } from "@/components/template/services/therapy-modalities/narrative-therapy";
 import { PlayTherapy } from "@/components/template/services/therapy-modalities/play-therapy";
+import { ParentChildTherapy } from "@/components/template/services/therapy-modalities/parent-child-therapy";
 
 export {
   ArtTherapy,
@@ -14,4 +15,5 @@ export {
   EmotionFocusedTherapy,
   NarrativeTherapy,
   PlayTherapy,
+  ParentChildTherapy,
 };

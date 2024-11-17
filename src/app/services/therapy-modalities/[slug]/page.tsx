@@ -5,6 +5,7 @@ import {
   DialecticalTherapy,
   EmotionFocusedTherapy,
   NarrativeTherapy,
+  ParentChildTherapy,
   PlayTherapy,
 } from "@/components/pages/services/therapy-modalities";
 
@@ -25,6 +26,7 @@ export async function generateMetadata({
     "emotion-focused-therapy": "Emotion Focused Therapy",
     "narrative-therapy": "Narrative Therapy",
     "play-therapy": "Play Therapy",
+    "parent-child-therapy": "Parent Child Therapy",
   };
 
   const title = titles[params.slug] || "Young Sprouts Therapy";
@@ -60,6 +62,9 @@ export default async function ConditionsWeSupportPage({
       break;
     case "play-therapy":
       content = <PlayTherapy />;
+      break;
+    case "parent-child-therapy":
+      content = <ParentChildTherapy />;
       break;
 
     default:
