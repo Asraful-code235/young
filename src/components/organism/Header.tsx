@@ -17,21 +17,27 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useState } from "react";
+import { MobileNav } from "./MobileNav";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenAbout, setIsOpenAbout] = useState(false);
   return (
     <header className="w-full flex items-center justify-between gap-4 py-1.5 max-w-[1440px] mx-auto ~px-5/10 ">
-      <Link href={"/"}>
-        <Image
-          src={Logo}
-          className="w-[85px] lg:w-[133px] "
-          width={140}
-          height={50}
-          alt="logo"
-        />
-      </Link>
+      <div className="flex items-center gap-3.5">
+        <div className="lg:hidden mt-2">
+          <MobileNav />
+        </div>
+        <Link href={"/"}>
+          <Image
+            src={Logo}
+            className="w-[85px] lg:w-[133px] "
+            width={140}
+            height={50}
+            alt="logo"
+          />
+        </Link>
+      </div>
       <nav className=" hidden lg:flex items-center gap-8">
         <Link href={"/"}>
           <Text type="p" size="medium" className="">
