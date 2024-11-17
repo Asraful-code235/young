@@ -1,76 +1,100 @@
 'use client';
 
 import * as yup from 'yup';
-import { useForm } from 'react-hook-form';
-import { yupResolver } from '@hookform/resolvers/yup';
 import { Input } from '@/components/ui/text-input-field';
 import { Button } from '@/components/ui/button';
-
-type FormData = {
-  first_name: string;
-  last_name: string;
-  phone: string;
-  email: string;
-};
+import { Textarea } from '@/components/ui/textarea-input-field';
+import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+import { toast } from 'sonner';
 
 export const loginSchema = yup.object({
   first_name: yup.string().required('First name is required'),
   last_name: yup.string().required('Last name is required'),
   phone: yup.string().required('Phone is required'),
   email: yup.string().email('Enter valid email').required(),
+  message: yup.string().required('Message is required'),
 });
 
 export function ContactForm() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<FormData>({
-    resolver: yupResolver(loginSchema),
-  });
+  const form = useRef<HTMLFormElement>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const onSubmit = (data: object) => {
-    console.log(data);
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    if (form.current) {
+      await emailjs
+        .sendForm(
+          'service_hmo98vn',
+          'template_9do5abh',
+          form.current,
+          'NBm1Am8HA6NeOIEUY'
+        )
+        .then(
+          () => {
+            toast.success('Email sent successfully!');
+          },
+          () => {
+            toast.error('Failed to send email. Please try again.');
+          }
+        );
+    }
+
+    setIsSubmitting(false);
+    (e.target as HTMLFormElement).reset();
   };
 
   return (
     <section className='max-w-[1440px] mx-auto ~p-5/28'>
       <div className='w-full lg:w-6/12 mx-auto'>
-        <form className='space-y-6' onSubmit={handleSubmit(onSubmit)}>
+        <form className='space-y-6' onSubmit={handleSubmit} ref={form}>
           <Input
             className='py-5 bg-gray-100'
             placeholder='Enter first name'
             id='email'
-            errors={errors}
             label='First name*'
-            {...register('first_name')}
+            name='first_name'
+            required
           />
           <Input
             className='py-5 bg-gray-100'
             placeholder='Enter last name'
             id='email'
-            errors={errors}
             label='Last name*'
-            {...register('last_name')}
+            name='last_name'
+            required
           />
           <Input
             className='py-5 bg-gray-100'
             placeholder='Enter email address'
             id='email'
-            errors={errors}
             label='Email address*'
-            {...register('email')}
+            name='email'
+            required
           />
           <Input
             className='py-5 bg-gray-100'
             placeholder='Enter phone number'
             id='email'
-            errors={errors}
             label='Phone*'
-            {...register('phone')}
+            name='phone'
+            required
           />
+          <Textarea
+            className=' bg-gray-100'
+            placeholder='Enter message'
+            id='message'
+            label='Message*'
+            name='message'
+            required
+          />
+
           <div>
-            <Button className='lg:max-w-full'>Send</Button>
+            <Button className='lg:max-w-full' disabled={isSubmitting}>
+              Send
+            </Button>
           </div>
         </form>
       </div>
