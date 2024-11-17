@@ -7,6 +7,7 @@ import {
   NarrativeTherapy,
   ParentChildTherapy,
   PlayTherapy,
+  SolutionFocusedTherapy,
 } from "@/components/pages/services/therapy-modalities";
 
 interface ContidionsWeSupportTypeProps {
@@ -27,6 +28,7 @@ export async function generateMetadata({
     "narrative-therapy": "Narrative Therapy",
     "play-therapy": "Play Therapy",
     "parent-child-therapy": "Parent Child Therapy",
+    "solution-focused-therapy": "Solution focused Therapy",
   };
 
   const title = titles[params.slug] || "Young Sprouts Therapy";
@@ -65,6 +67,9 @@ export default async function ConditionsWeSupportPage({
       break;
     case "parent-child-therapy":
       content = <ParentChildTherapy />;
+      break;
+    case "solution-focused-therapy":
+      content = <SolutionFocusedTherapy />;
       break;
 
     default:

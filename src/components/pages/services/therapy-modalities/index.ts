@@ -6,6 +6,7 @@ import { EmotionFocusedTherapy } from "@/components/template/services/therapy-mo
 import { NarrativeTherapy } from "@/components/template/services/therapy-modalities/narrative-therapy";
 import { PlayTherapy } from "@/components/template/services/therapy-modalities/play-therapy";
 import { ParentChildTherapy } from "@/components/template/services/therapy-modalities/parent-child-therapy";
+import { SolutionFocusedTherapy } from "@/components/template/services/therapy-modalities/solution-focused-therapy";
 
 export {
   ArtTherapy,
@@ -16,4 +17,5 @@ export {
   NarrativeTherapy,
   PlayTherapy,
   ParentChildTherapy,
+  SolutionFocusedTherapy,
 };
