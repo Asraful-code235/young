@@ -4,6 +4,7 @@ import { CognitiveTherapy } from "@/components/template/services/therapy-modalit
 import { DialecticalTherapy } from "@/components/template/services/therapy-modalities/dialectical-behavioral-therapy";
 import { EmotionFocusedTherapy } from "@/components/template/services/therapy-modalities/emotion-focused-therapy";
 import { NarrativeTherapy } from "@/components/template/services/therapy-modalities/narrative-therapy";
+import { PlayTherapy } from "@/components/template/services/therapy-modalities/play-therapy";
 
 export {
   ArtTherapy,
@@ -12,4 +13,5 @@ export {
   DialecticalTherapy,
   EmotionFocusedTherapy,
   NarrativeTherapy,
+  PlayTherapy,
 };

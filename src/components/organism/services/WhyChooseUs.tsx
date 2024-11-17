@@ -16,9 +16,15 @@ type Props = {
   data: DataType;
   row?: 2 | 3;
   showBg?: boolean;
+  subDescription?: string;
 };
 
-export function WhyChooseUs({ data, row = 2, showBg = false }: Props) {
+export function WhyChooseUs({
+  data,
+  row = 2,
+  showBg = false,
+  subDescription,
+}: Props) {
   return (
     <section
       className={cn(
@@ -51,6 +57,11 @@ export function WhyChooseUs({ data, row = 2, showBg = false }: Props) {
           </Card>
         ))}
       </div>
+      {subDescription && (
+        <p className="text-center leading-6 max-w-[837px] mx-auto">
+          {subDescription}
+        </p>
+      )}
     </section>
   );
 }
