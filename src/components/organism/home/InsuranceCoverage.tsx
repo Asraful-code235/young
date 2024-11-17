@@ -20,9 +20,9 @@ const InsuranceCoverageImages = [
 
 export function InsuranceCoverage() {
   return (
-    <section className='relative bg-[url("/images/insurance-coverage-image.webp")]  bg-no-repeat bg-cover bg-center'>
+    <section className='relative bg-[url("/images/insurance-coverage-image.webp")] bg-no-repeat bg-cover bg-center'>
       <div className='absolute inset-0 bg-[#0196AFCF] opacity-90'></div>
-      <div className='relative z-[10] ~py-16/28 max-w-[1080px] mx-auto ~px-5/16 flex flex-col gap-14 ~gap-6/12 overflow-hidden text-center'>
+      <div className='relative z-[10] ~py-16/28 max-w-[1080px] mx-auto ~px-5/16 flex flex-col ~gap-6/12 overflow-hidden text-center'>
         <h2 className='~text-xl/5xl text-white'>Insurance Coverage</h2>
         <p className='text-white'>
           We believe that access to quality mental health care should be both
