@@ -11,6 +11,7 @@ type Props = {
   showBg: boolean;
   title: string;
   description: string;
+  subDescription?: string;
 };
 
 export function OurApproach({
@@ -18,6 +19,7 @@ export function OurApproach({
   showBg = false,
   title,
   description,
+  subDescription,
 }: Props) {
   return (
     <div className={cn("w-full py-16 ~px-5/10", showBg ? "bg-[#F4FDFF]" : "")}>
@@ -32,6 +34,11 @@ export function OurApproach({
       <div className="max-w-[690px] w-full mx-auto mt-6">
         <VerticalTimeLine data={data} />
       </div>
+      {subDescription && (
+        <p className="text-center leading-6 max-w-[846px] mx-auto mt-8">
+          {subDescription}
+        </p>
+      )}
     </div>
   );
 }

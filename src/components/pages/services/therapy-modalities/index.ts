@@ -2,5 +2,12 @@ import { ArtTherapy } from "@/components/template/services/therapy-modalities/ar
 import { AcceptanceTherapy } from "@/components/template/services/therapy-modalities/Acceptance-commitment-therapy";
 import { CognitiveTherapy } from "@/components/template/services/therapy-modalities/cognitive-behavioral-therapy";
 import { DialecticalTherapy } from "@/components/template/services/therapy-modalities/dialectical-behavioral-therapy";
+import { EmotionFocusedTherapy } from "@/components/template/services/therapy-modalities/emotion-focused-therapy";
 
-export { ArtTherapy, AcceptanceTherapy, CognitiveTherapy, DialecticalTherapy };
+export {
+  ArtTherapy,
+  AcceptanceTherapy,
+  CognitiveTherapy,
+  DialecticalTherapy,
+  EmotionFocusedTherapy,
+};

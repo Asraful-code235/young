@@ -17,7 +17,7 @@ type Props = {
 
 export function Faq({ data }: Props) {
   return (
-    <section className="~pt-16/24 flex flex-col gap-8 lg:gap-14 w-full">
+    <section className="~pt-16/24 flex flex-col gap-8 lg:gap-9 w-full">
       <h2 className="text-primary font-medium ~text-2xl/3xl text-center">
         FAQs
       </h2>

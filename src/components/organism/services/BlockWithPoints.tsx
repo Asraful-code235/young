@@ -45,6 +45,7 @@ export function BlockWithPoints({ data }: Props) {
           </li>
         ))}
       </ul>
+      {data?.subTitle && <p className="leading-6">{data?.subTitle}</p>}
 
       <div className="flex-col flex lg:flex-row lg:flex-wrap gap-6 items-center w-full mt-6">
         <Button className="lg:max-w-[270px] w-full">Book a Free Consult</Button>
