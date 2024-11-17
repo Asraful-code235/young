@@ -22,7 +22,7 @@ export function WhyChooseUs({ data, row = 2, showBg = false }: Props) {
   return (
     <section
       className={cn(
-        "flex flex-col gap-6 lg:gap-14",
+        "flex flex-col gap-6 lg:gap-14 max-lg:px-5",
         showBg ? "bg-[#E6F5F7] py-16" : ""
       )}
     >
@@ -30,9 +30,11 @@ export function WhyChooseUs({ data, row = 2, showBg = false }: Props) {
         <h2 className="~text-2xl/3xl font-medium text-primary text-center">
           {data.title}
         </h2>
-        <p className="text-center leading-6 max-w-[948px] mx-auto">
-          {data?.description}
-        </p>
+        {data?.description && (
+          <p className="text-center leading-6 max-w-[948px] mx-auto">
+            {data?.description}
+          </p>
+        )}
       </div>
       <div
         className={cn(

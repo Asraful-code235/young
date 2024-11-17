@@ -4,6 +4,7 @@ import {
   CognitiveTherapy,
   DialecticalTherapy,
   EmotionFocusedTherapy,
+  NarrativeTherapy,
 } from "@/components/pages/services/therapy-modalities";
 
 interface ContidionsWeSupportTypeProps {
@@ -21,6 +22,7 @@ export async function generateMetadata({
     "cognitive-behavioral-therapy": "Cognitive Behavioral Therapy",
     "dialectical-behavioral-therapy": "Dialectical Behavioral Therapy",
     "emotion-focused-therapy": "Emotion Focused Therapy",
+    "narrative-therapy": "Narrative Therapy",
   };
 
   const title = titles[params.slug] || "Young Sprouts Therapy";
@@ -50,6 +52,9 @@ export default async function ConditionsWeSupportPage({
       break;
     case "emotion-focused-therapy":
       content = <EmotionFocusedTherapy />;
+      break;
+    case "narrative-therapy":
+      content = <NarrativeTherapy />;
       break;
 
     default:
