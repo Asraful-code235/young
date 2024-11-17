@@ -276,7 +276,9 @@ export function Header() {
                   </DropdownMenuPortal>
                 </DropdownMenuSub>
                 <DropdownMenuItem className="cursor-pointer">
-                  Approach & Specialties
+                  <Link href={"/services/approach-and-specialties"}>
+                    Approach & Specialties
+                  </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -337,7 +339,7 @@ export function Header() {
           </Text>
         </Link>
       </nav>
-      <Button className="bg-primary text-white rounded-md p-2 !py-2.5 ~text-sm/base">
+      <Button className="bg-primary text-white rounded-md p-2 !py-2.5 ~text-sm/base w-fit">
         Book a Free Consult
       </Button>
     </header>
